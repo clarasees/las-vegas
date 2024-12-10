@@ -1,0 +1,69 @@
+#map {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+
+.leaflet-image-layer {
+    height: unset !important;
+    opacity: .5;
+    z-index: 999999;
+    position: relative;
+}
+
+.leaflet-image-layer:hover {
+    opacity: 1;
+}
+
+/* Custom Popup Styling */
+.custom-popup .leaflet-popup-content-wrapper {
+    background-color: #2b2d30;
+    /* Light gray background */
+    border: 2px solid #000000;
+    /* Dark gray border */
+    border-radius: 0px;
+    /* Rounded corners */
+    padding: 10px;
+}
+
+.custom-popup .leaflet-popup-tip {
+    background-color: #000000;
+    /* Match the border color */
+}
+
+
+/* Styling for the popup content */
+.custom-popup h3 {
+    font-size: 60px;
+    font-family: 'Helvetica', sans-serif;
+    margin: 0;
+    line-height: .8;
+    color: #000000;
+}
+
+.custom-popup p {
+    font-size: 14px;
+    margin: 0;
+    font-family: 'Helvetica', sans-serif;
+    font-size: 14px;
+    color: #000000;
+}
+
+.custom-popup .leaflet-popup-content-wrapper {
+    width: 400px; /* Set popup width */
+    height: 360px; /* Set popup height */
+    max-height: 240px; /* Optional: Limit maximum height */
+    overflow-y: auto; /* Add scrolling if content exceeds height */
+    color: #fff;
+}
+
+#myTitle {
+    position: absolute;
+    font-size: 48px;
+    color: red;
+    z-index: 10000;
+    top: 12px;
+    left: 71px;
+}
