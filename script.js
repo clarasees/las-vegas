@@ -63,7 +63,7 @@ var houseIcon = L.icon({
 
 var venturiIcon = L.icon({
     iconUrl: 'img/Venturi.png',
-    shadowUrl: 'img/shadow/venShadow.png',
+    shadowUrl: 'img/shadow/VenShadow.png',
     iconSize: [110, 225], // size of the icon
     shadowSize: [110, 225], // size of the shadow
     iconAnchor: [40, 120], // point of the icon which will correspond to marker's location
