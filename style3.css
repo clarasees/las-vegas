@@ -4,14 +4,19 @@
     }
   }
 
+  @font-face {
+    font-family: 'Baskerville Old Face'; /*a name to be used later*/
+    src: url('fonts/baskerville-old-face.ttf'); /*URL to font*/
+}
 #myTitle {
     position: absolute;
     font-size: 48px;
-    color: red;
-    font-family: Helvetica, sans-serif;
+    color: rgb(110, 209, 255);
+    font-family: 'Baskerville Old Face', sans-serif;
     z-index: 10000;
     top: 33px;
     left: 62px;
+   
 }
 
 #map {
@@ -20,7 +25,7 @@
     bottom: 0;
     left: 0;
     right: 0;
-    border: 6px solid redp ;
+    border: 6px solid  rgb(110, 209, 255);
 }
 
 .leaflet-popup-content {
@@ -31,8 +36,8 @@
     max-height: 240px; /* Optional: Limit maximum height */
     overflow-y: auto; /* Add scrolling if content exceeds height */
     color: white;
-    font-family: 'Helvetica', sans-serif;
-    line-height: 1.2;
+    font-family: 'Baskerville Old Face', sans-serif;
+    line-height: 1.3;
 }
 
 .leaflet-popup-content-wrapper {

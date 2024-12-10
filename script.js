@@ -1,20 +1,20 @@
 
 var map = L.map('map').setView([36.1173, -115.1761], 14);
 var osm = L.tileLayer('https://api.maptiler.com/maps/satellite/{z}/{x}/{y}.jpg?key=IBCKLYY5S4FWKs8guBUE', {
-    attribution: '',
+    attribution: 'Clara Cayosa 2024',
 }).addTo(map);
 
 var Stadia_StamenTonerLite = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner_lite/{z}/{x}/{y}{r}.{ext}', {
     minZoom: 0,
     maxZoom: 22,
-    attribution: 'via Stadia Maps',
+    attribution: 'via Stadia Maps, Clara Cayosa 2024',
     ext: 'png'
 });
 
 var Stadia_StamenToner = L.tileLayer('https://tiles.stadiamaps.com/tiles/stamen_toner/{z}/{x}/{y}{r}.{ext}', {
     minZoom: 0,
     maxZoom: 20,
-    attribution: 'via Stadia Maps',
+    attribution: 'via Stadia Maps, Clara Cayosa 2024',
     ext: 'png'
 });
 
@@ -26,7 +26,7 @@ var starIcon = L.icon({
     shadowSize: [150, 230], // size of the shadow
     iconAnchor: [12, 295], // [-(margin-left), margin-top]
     shadowAnchor: [-40, 300],  // the same for the shadow
-    popupAnchor: [88, -280] // point from which the popup should open relative to the iconAnchor
+    popupAnchor: [60, -280] // point from which the popup should open relative to the iconAnchor
 });
 
 var eatIcon = L.icon({
@@ -36,7 +36,7 @@ var eatIcon = L.icon({
     shadowSize: [139.5, 209], // size of the shadow
     iconAnchor: [80, 250], // point of the icon which will correspond to marker's location
     shadowAnchor: [68, 240],  // the same for the shadow
-    popupAnchor: [10, -210] // point from which the popup should open relative to the iconAnchor
+    popupAnchor: [-20, -220] // point from which the popup should open relative to the iconAnchor
 });
 
 
@@ -47,7 +47,7 @@ var phillipsIcon = L.icon({
     shadowSize: [100, 210], // size of the shadow
     iconAnchor: [0, 150], // point of the icon which will correspond to marker's location
     shadowAnchor: [-20, 150],  // the same for the shadow
-    popupAnchor: [25, -110] // point from which the popup should open relative to the iconAnchor
+    popupAnchor: [50, -150] // point from which the popup should open relative to the iconAnchor
 });
 
 
@@ -68,7 +68,7 @@ var venturiIcon = L.icon({
     shadowSize: [110, 225], // size of the shadow
     iconAnchor: [40, 120], // point of the icon which will correspond to marker's location
     shadowAnchor: [10, 124],  // the same for the shadow
-    popupAnchor: [0, -80] // point from which the popup should open relative to the iconAnchor
+    popupAnchor: [15, -100] // point from which the popup should open relative to the iconAnchor
 });
 
 
@@ -79,7 +79,7 @@ var wIcon = L.icon({
     shadowSize: [102, 153], // size of the shadow
     iconAnchor: [40, 120], // point of the icon which will correspond to marker's location
     shadowAnchor: [10, 160],  // the same for the shadow
-    popupAnchor: [0, -80] // point from which the popup should open relative to the iconAnchor
+    popupAnchor: [10, -100] // point from which the popup should open relative to the iconAnchor
 });
 
 
@@ -90,7 +90,7 @@ var soldierIcon = L.icon({
     shadowSize: [90, 190], // size of the shadow
     iconAnchor: [0, 150], // point of the icon which will correspond to marker's location
     shadowAnchor: [-40, 150],  // the same for the shadow
-    popupAnchor: [25, -110] // point from which the popup should open relative to the iconAnchor
+    popupAnchor: [55, -148] // point from which the popup should open relative to the iconAnchor
 });
 
 
@@ -102,7 +102,7 @@ var deniseIcon = L.icon({
     shadowSize: [110, 225], // size of the shadow
     iconAnchor: [40, 120], // point of the icon which will correspond to marker's location
     shadowAnchor: [20, 120],  // the same for the shadow
-    popupAnchor: [0, -80] // point from which the popup should open relative to the iconAnchor
+    popupAnchor: [14, -100] // point from which the popup should open relative to the iconAnchor
 });
 
 
@@ -113,7 +113,7 @@ var atlasIcon = L.icon({
     shadowSize: [90, 130], // size of the shadow
     iconAnchor: [10, 220], // point of the icon which will correspond to marker's location
     shadowAnchor: [-2, 236],  // the same for the shadow
-    popupAnchor: [25, -200] // point from which the popup should open relative to the iconAnchor
+    popupAnchor: [25, -220] // point from which the popup should open relative to the iconAnchor
 });
 
 
@@ -124,9 +124,19 @@ var duckIcon = L.icon({
     shadowSize: [185, 130], // size of the shadow
     iconAnchor: [200, 0], // point of the icon which will correspond to marker's location
     shadowAnchor: [180, 20],  // the same for the shadow
-    popupAnchor: [-110, 0] // point from which the popup should open relative to the iconAnchor
+    popupAnchor: [-110, 20] // point from which the popup should open relative to the iconAnchor
 });
 
+
+var monIcon = L.icon({
+    iconUrl: 'img/monument.png',
+    shadowUrl: 'img/shadow/monShadow.png',
+    iconSize: [190, 250], 
+    shadowSize: [190, 250], // size of the shadow
+    iconAnchor: [60, 120], // point of the icon which will correspond to marker's location
+    shadowAnchor: [30, 116],  // the same for the shadow
+    popupAnchor: [10, -60] // point from which the popup should open relative to the iconAnchor
+});
 
 
 var welcomeIcon = L.icon({
@@ -136,7 +146,7 @@ var welcomeIcon = L.icon({
     shadowSize: [200, 222], // size of the shadow
     iconAnchor: [60, 120], // point of the icon which will correspond to marker's location
     shadowAnchor: [54, 157],  // the same for the shadow
-    popupAnchor: [-125, 0] // point from which the popup should open relative to the iconAnchor
+    popupAnchor: [10, -120] // point from which the popup should open relative to the iconAnchor
 });
 
 // MARKERS & POPUP Create a custom popup
@@ -146,9 +156,9 @@ L.marker([36.124852, -115.1666866], {icon: eatIcon}).addTo(map).bindPopup("Billb
 L.marker([36.120856, -115.173903], {icon: houseIcon}).addTo(map).bindPopup("Symbol in Space Before Form in Space: Las Vegas as a Communication System | The sign for the Motel Monticello, a silhouette of an enormous Chip­pendale highboy, is visible on the highway before the motel itself. This architecture of styles and signs is anti spatial; it is an architecture of communication over space; communication dominates space as an ele­ment in the architecture and in the landscape (Figs. 1-6). But it is for a new scale of landscape. The philosophical associations of the old eclec­ticism evoked subtle and complex meanings to be savored in the docile spaces of a traditional landscape. The commercial persuasion of road­side eclecticism provokes bold impact in the vast and complex setting of a new landscape of big spaces, high speeds, and complex programs. Styles and signs make connections among many elements, far apart and seen fast. The message is basely commercial; the context is basically new. A driver 30 years ago could maintain a sense of orientation in space. At the simple crossroad a little sign with an arrow confirmed what was obvious. One knew where one was. When the crossroads becomes a cloverleaf, one must turn right to turn left, a contradiction poignantly evoked in the print by Allan D’Arcangelo (Fig. 7). But the driver has no time to ponder paradoxical subtleties within a dangerous, sinuous maze. He or she relies on signs for guidance—enormous signs in vast spaces at high speeds. The dominance of signs over space at a pedestrian scale occurs in big airports. Circulation in a big railroad station required little more than a simple axial system from taxi to train, by ticket window, stores, waiting room, and platform—all virtually without signs. Architects object to signs in buildings: “If the plan is clear, you can see where to go.” But complex programs and settings require complex combinations of media beyond the purer architectural triad of structure, form, and light at the service of space. They suggest an architecture of bold communication rather than one of subtle expression.");
 L.marker([36.115055, -115.170999], {icon: wIcon}).addTo(map).bindPopup("Architecture as Symbol | Critics and historians, who documented the “decline of popular sym­bols” in art, supported orthodox Modern architects, who shunned sym­bolism of form as an expression or reinforcement of content: meaning was to be communicated, not through allusion to previously known forms, but through the inherent, physiognomic characteristics of form. The creation of architectural form was to be a logical process, free from images of past experience, determined solely by program and structure, with an occasional assist, as Alan Colquhoun has suggested, from in­tuition. But some recent critics have questioned the possible level of content to be derived from abstract forms. Others have demonstrated that the functionalists, despite their protestations, derived a formal vocabulary of their own, mainly from current art movements and the industrial ver­nacular; and latter-day followers such as the Archigram group have turned, while similarly protesting, to Pop Art and the space industry. However, most critics have slighted a continuing iconology in popular commercial art, the persuasive heraldry that pervades our environment from the advertising pages of The New Yorker to the superbillboards of Houston. And their theory of the “debasement” of symbolic architec­ture in nineteenth-century eclecticism has blinded them to the value of the representational architecture along highways. Those who acknowl­edge this roadside eclecticism denigrate it, because it flaunts the cliche of a decade ago as well as the style of a century ago. But why not? Time travels fast today. The Miami Beach Modern motel on a bleak stretch of highway in southern Delaware reminds jaded drivers of the welcome luxury of a tropical resort, persuading them, perhaps, to forgo the gracious planta­tion across the Virginia border called Motel Monticello. The real hotel in Miami alludes to the international stylishness of a Brazilian resort, which, in tum, derives from the International Style of middle Corbu. This evolution from the high source through the middle source to the low source took only 30 years. Today, the middle source, the neo­-Eclectic architecture of the 1940s and the 1950s, is less interesting than its commercial adaptations. Roadside copies of Ed Stone are more in­teresting than the real Ed Stone. ");
 
-L.marker([36.111073, -115.173683], {icon: deniseIcon}).addTo(map).bindPopup("I am Denise Scott Brown.");
+L.marker([36.111073, -115.173683], {icon: deniseIcon}).addTo(map).bindPopup("Hello, I am Denise Scott Brown, an architect, urban planner, and theorist who thrives at the intersection of design, culture, and society. I was born in 1931 in Zambia, grew up in South Africa, and later studied in England and the U.S., where I earned my architectural and planning degrees. I’ve worked alongside my partner, Robert Venturi, to explore the richness of architecture and urbanism, co-authoring Learning from Las Vegas, where we delved into the symbolism and meaning in everyday environments. I’m passionate about making architecture accessible, connecting it to social issues, and celebrating the complexity of our built world.");
 
-L.marker([36.123162, -115.167323], {icon: venturiIcon}).addTo(map).bindPopup("I am Robert Venturi.");
+L.marker([36.123162, -115.167323], {icon: venturiIcon}).addTo(map).bindPopup("Hi, I am Robert Venturi, an architect and thinker who loves to challenge conventions. I was born in 1925 in Philadelphia and studied at Princeton University, where my passion for architecture grew. People often describe my work as postmodern because I believe in complexity and contradiction rather than simplistic modernist ideals. I authored Complexity and Contradiction in Architecture, a book that sparked conversations about embracing diversity and historical context in design. Along with my partner Denise Scott Brown, I explored how architecture interacts with culture, especially in our book Learning from Las Vegas. I'm passionate about making architecture inclusive, layered, and reflective of real life.");
 
 L.marker([36.081975, -115.172773], {icon: welcomeIcon}).addTo(map).bindPopup("Welcome to Las Vegas :-)");
 
@@ -158,6 +168,7 @@ L.marker([36.087078, -115.172392], {icon: atlasIcon}).addTo(map).bindPopup("Main
 
 L.marker([36.115299, -115.167437], {icon: soldierIcon}).addTo(map).bindPopup("Heroic and Original, or Ugly and Ordinary | The content of Crawford Manor's implicit symbolism is what we call heroic and original. Although the substance is conventional and ordinary, the image is heroic and original. The content of the explicit symbolism of Guild House is what we call ugly and ordinary. The technologically unadvanced brick, the old-fashioned, double-hung windows, the pretty materials around the entrance, and the ugly antenna not hidden behind the parapet in the accepted fashion, all are distinctly conventional in image as well as substance or, rather, ugly and ordinary. (The inevitable plastic flowers at home in these windows are, rather, pretty and ordinary; they do not make this architecture look silly as they would, we think, the heroic and original windows of Crawford Manor. But in Guild House, the symbolism of the ordinary goes further than this. The pretensions of the giant order on the front, the symmetrical palazzo-like composition with its three monumental stories (as well as its six real stories), topped by a piece of sculture- or almost sculpture– suggest something of the heroi and original. It is true that in this case the heroic and original facade is somewhat ironical, but it is this juxtaposition of contrasting symbols- the appliqué of one order of sybols on another that constitutes for us the decorative shed. This is what makes Guild House an architect's decorated shed- not architecture without architects.");
 
+L.marker([36.107624, -115.166572], {icon: monIcon}).addTo(map).bindPopup("The decorated shed is the conventional shelter that applies symbols (Figs. 75, 76). We maintain that both kinds of architecture are valid—Chartres is a duck (although it is a decorated shed as well), and the Palazzo Farnese is a decorated shed—but we think that the duck is seldom relevant today, although it pervades Modern architecture. We shall describe how we come by the automobile-oriented commercial architecture of urban sprawl as our source for a civic and residential architecture of meaning, viable now, as the turn-of-the-century industrial vocabulary was viable for a Modern architecture of space and industrial technology 40 years ago. We shall show how the iconography, rather than the space and piazzas of historical architecture, forms the background for the study of association and symbolism in commercial art and strip architecture. Finally we shall argue for the symbolism of the ugly and ordinary xin architecture and for the particular significance of the decorated shed with a rhetorical front and conventional behind: for architecture as shelter with symbols on it.")
 
 //Leaflet layer control
 var baseMaps = {
