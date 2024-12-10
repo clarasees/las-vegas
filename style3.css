@@ -1,6 +1,6 @@
 @media only screen and (min-width: 600px) {
     #myTitle {
-        font-size: 48px;
+        font-size: 24px;
     }
 }
 
@@ -13,11 +13,11 @@
 
 #myTitle {
     position: absolute;
-    font-size: 28px;
+    font-size: 50px;
     color: rgb(110, 209, 255);
     font-family: 'Baskerville Old Face', sans-serif;
     z-index: 10000;
-    top: 33px;
+    top: 40px;
     left: 62px;
 
 }
